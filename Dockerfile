@@ -6,3 +6,5 @@ RUN apk add --no-cache imagemagick
 
 # install deps for phantom
 RUN apk add --no-cache curl && curl -Ls "https://github.com/dustinblackman/phantomized/releases/download/2.1.1/dockerized-phantomjs.tar.gz" | tar xz -C /
+
+CMD ["/bin/sh"]
